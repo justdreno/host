@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "recoil",
+	"version": "${version}",
+	"name": "Recoil",
+	"description": "Advanced Fabric client mod backend for Minecraft 1.21.11",
+	"authors": [
+		"Recoil Team"
+	],
+	"contact": {
+		"homepage": "https://github.com/recoil",
+		"sources": "https://github.com/recoil/recoil"
+	},
+	"license": "MIT",
+	"icon": "assets/recoil/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"api.recoil.ClientMod"
+		],
+		"client": [
+			"api.recoil.ClientModClient"
+		]
+	},
+	"mixins": [
+		"recoil.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
